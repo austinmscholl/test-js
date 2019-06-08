@@ -21,18 +21,12 @@ looker.plugins.visualizations.add({
   // Set up the initial state of the visualization
   create: function(element, config) {
 
-    var target = window.parent.document.getElementsByClassName('.vis-header'); 
-    console.log(target);
-
     // Insert a <style> tag with some styles we'll use later.
     element.innerHTML = `
        <style>
        .higher-potential-value-vis {
         height: 100%;
         display: grid;
-      }
-      !important .vis-header {
-        padding: 0px;
       }
       .higher-potential-value-image {
         grid-column-start: 1;
